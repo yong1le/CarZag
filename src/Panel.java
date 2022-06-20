@@ -8,8 +8,8 @@ public class Panel extends JPanel implements Runnable {
 
   static final int GAME_HEIGHT = 750;
   static final int GAME_WIDTH = 900;
-  static final int PLAYER_WIDTH = 30;
-  static final int PLAYER_HEIGHT = 30;
+  static final int PLAYER_WIDTH = 10;
+  static final int PLAYER_HEIGHT = 10;
   static final int ENEMY_WIDTH = 40;
   static final int ENEMY_HEIGHT = 40;
   static final int ROAD_WIDTH = 70;
@@ -180,6 +180,11 @@ public class Panel extends JPanel implements Runnable {
       if (r.intersects(player)) {
         return false;
       }
+      // if (player.x + 10 > r.x
+      //     && player.x + (PLAYER_WIDTH) < r.x + ROAD_WIDTH
+      //     && player.y + 10 > r.y
+      //     && player.y + (PLAYER_WIDTH) < r.y + ROAD_HEIGHT)
+      //   return false;
     }
     return true;
   }

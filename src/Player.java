@@ -7,14 +7,14 @@ public class Player extends Rectangle{
   private int lives = 3;
 
   Player(int x, int y, int PLANE_WIDTH, int PLANE_HEIGHT, Image image) {
-    super(x, y, PLANE_WIDTH, PLANE_HEIGHT);
+    super(x+15, y+15, PLANE_WIDTH, PLANE_HEIGHT);
     this.image = image;
   }
 
   public void draw(Graphics g) {
     // g.setColor(Color.white);
-    // g.fillOval(x, y, width, height);
-    g.drawImage(image, x, y, width, height, null);
+    // g.fillOval(x, y, 0, height);
+    g.drawImage(image, x-15, y-15, width*3, height*3, null);
   }
 
   public void up(Image img) {
