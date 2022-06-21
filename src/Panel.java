@@ -38,7 +38,7 @@ public class Panel extends JPanel implements Runnable {
   Random r = new Random();
 
   Panel() {
-    grass = new ImageIcon("images/ground.png").getImage();
+    grass = new ImageIcon("src/images/ground.png").getImage();
     roadPic = new ImageIcon("src/images/grassv.png").getImage();
     roadPic1 = new ImageIcon("src/images/grassh.png").getImage();
     roadPic2 = new ImageIcon("src/images/grassvh.png").getImage();

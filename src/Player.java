@@ -1,11 +1,7 @@
-import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
 
 public class Player extends Rectangle{
   private Image image;
-  private int lives = 3;
-
   Player(int x, int y, int PLANE_WIDTH, int PLANE_HEIGHT, Image image) {
     super(x+15, y+15, PLANE_WIDTH, PLANE_HEIGHT);
     this.image = image;

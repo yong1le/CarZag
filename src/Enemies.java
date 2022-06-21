@@ -1,11 +1,8 @@
 import java.awt.*;
-import javax.swing.*;
 
 public class Enemies extends Rectangle {
   public static int direction = 1;
   private Image image;
-  private int health = 100;
-
   Enemies(int x, int y, int ENEMY_WIDTH, int ENEMY_HEIGHT, Image image) {
     super(x, y, ENEMY_WIDTH, ENEMY_HEIGHT);
     this.image = image;

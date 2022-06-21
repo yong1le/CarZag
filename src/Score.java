@@ -1,5 +1,4 @@
 import java.awt.*;
-import javax.swing.*;
 
 public class Score extends Rectangle {
   Score(int x, int y, int width, int height) {
