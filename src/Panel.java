@@ -8,10 +8,10 @@ public class Panel extends JPanel implements Runnable {
 
   static final int GAME_HEIGHT = 750;
   static final int GAME_WIDTH = 900;
-  static final int PLAYER_WIDTH = 10;
-  static final int PLAYER_HEIGHT = 10;
-  static final int ENEMY_WIDTH = 40;
-  static final int ENEMY_HEIGHT = 40;
+  static final int PLAYER_WIDTH = 12;
+  static final int PLAYER_HEIGHT = 12;
+  static final int ENEMY_WIDTH = 60;
+  static final int ENEMY_HEIGHT = 60;
   static final int ROAD_WIDTH = 70;
   static final int ROAD_HEIGHT = 70;
   static final int BULLET_WIDTH = 2;
@@ -38,14 +38,14 @@ public class Panel extends JPanel implements Runnable {
   Random r = new Random();
 
   Panel() {
-    grass = new ImageIcon("src/images/ground.png").getImage();
+    grass = new ImageIcon("images/ground.png").getImage();
     roadPic = new ImageIcon("src/images/grassv.png").getImage();
     roadPic1 = new ImageIcon("src/images/grassh.png").getImage();
     roadPic2 = new ImageIcon("src/images/grassvh.png").getImage();
     roadPic3 = new ImageIcon("src/images/grasshv.png").getImage();
-    character = new ImageIcon("src/images/carv.png").getImage();
-    character1 = new ImageIcon("src/images/carh.png").getImage();
-    enemy = new ImageIcon("src/images/tower.png").getImage();
+    character = new ImageIcon("src/images/tankv.png").getImage();
+    character1 = new ImageIcon("src/images/tankh.png").getImage();
+    enemy = new ImageIcon("src/images/skull.png").getImage();
 
     newRoad();
     newPlane();
