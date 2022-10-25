@@ -8,11 +8,13 @@ public class Bullet extends Rectangle {
   }
 
   public void draw(Graphics g) {
+    //lol
     g.setColor(Color.red);
     g.fillRoundRect(x, y, width, height, 5, 5);
   }
   
   public void move() {
+    //moving it
     if (direction == 1) {
       y -= 7;
     }
